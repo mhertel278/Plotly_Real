@@ -5,7 +5,7 @@ function init() {
   // Use the list of sample names to populate the select options
   d3.json("samples.json").then((data) => {
     var sampleNames = data.names;
-    console.log(data);
+    // console.log(data);
     sampleNames.forEach((sample) => {
       selector
         .append("option")
@@ -58,10 +58,10 @@ function buildCharts(sample) {
   d3.json("samples.json").then((data) => {
     // 3. Create a variable that holds the samples array. 
     var samples = data.samples;
-    console.log(samples);
+    // console.log(samples);
     // // 4. Create a variable that filters the samples for the object with the desired sample number.
     var filteredSamples = samples.filter(sampleObj => sampleObj.id == sample);
-    console.log(filteredSamples);
+    // console.log(filteredSamples);
     //  5. Create a variable that holds the first sample in the array.
     var sampleSelected = filteredSamples[0];
 
@@ -71,7 +71,7 @@ function buildCharts(sample) {
     var otu_labels = sampleSelected.otu_labels;
     // console.log(otu_labels);
     var sample_values = sampleSelected.sample_values;
-    console.log(sample_values);
+    // console.log(sample_values);
 
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
@@ -79,7 +79,7 @@ function buildCharts(sample) {
     
 
     var yticks = otu_ids.slice(0,10).map(tick => `OTU ${tick}`).reverse();
-    console.log(yticks);
+    // console.log(yticks);
 
     // 8. Create the trace for the bar chart. 
     var barData = [{
