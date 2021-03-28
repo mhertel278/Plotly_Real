@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
@@ -33,14 +34,22 @@
         </div>
       </div>
       <div class="col-md-5">
-        <div id="bar"></div>
+        <h3></h3>
+        <p>A food startup company is seeking to enhance the flavor of their vegan beef alternatives.  They have partnered with a biological testing laboratory to explore the capabilities of different bacteria to synthesize the flavor of beef.  The lab has collected bacteria samples from the belly buttons of a group of study volunteers to be examined.  This dashboard provides a quick view of the most prominent bacteria present in each subject's belly button.  As the lab and food startup begin to determine which bacteria produce the most beef-like flavor, they can use this dashboard to quickly identify the subjects on whom those particular bacteria grow most prominently.</p>
       </div>
       <div class="col-md-5">
+        <div id="bar"></div>
+        
+      </div>
+    </div>  
+    <div class="row">
+      
+      <div class="col-md-4">
         <div id="gauge"></div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
+    <!-- </div> -->
+    <!-- <div class="row"> -->
+      <div class="col-md-8">
         <div id="bubble"></div>
       </div>
     </div>
@@ -48,7 +57,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  
+  <script src="static/samples.json"></script>
   <script src="static/js/charts.js"></script>
 
 </body>
